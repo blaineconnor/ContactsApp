@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="ContactDetailsWindow" Height="290" Width="300" WindowStyle="None" WindowState="Normal" AllowsTransparency="True" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Background="#6E654D" FontFamily="Baskerville Old Face">
     <Grid>
-        <Border MouseLeftButtonDown="Border_MouseLeftButtonDown">
+        <Border Background="#6E654D" MouseLeftButtonDown="Border_MouseLeftButtonDown">
             <DockPanel Height="40" VerticalAlignment="Top" HorizontalAlignment="Right">
                 <Border BorderBrush="#FF444444">
                     <Button x:Name="CloseButton" Click="CloseButton_Click" FontFamily="Baskerville Old Face"   FontSize="29" Content="X" Cursor="Hand" Background="#FFD8C59A" BorderBrush="Black" FontWeight="Bold" Foreground="#FFF9F9F9" Height="40"  Width="44"/>

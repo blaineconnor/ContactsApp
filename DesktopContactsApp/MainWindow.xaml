@@ -12,7 +12,7 @@
             <RowDefinition Height="2*"/>
             <RowDefinition Height="8*"/>
         </Grid.RowDefinitions>
-            <Border x:Name="brdTop" Grid.Row="0" MouseLeftButtonDown="brdTopMove" MouseDown="brdTopMove">
+        <Border x:Name="brdTop" Background="#266C4D" Grid.Row="0" MouseLeftButtonDown="brdTopMove" MouseDown="brdTopMove">
                 <DockPanel HorizontalAlignment="Right">
                     <Border  BorderBrush="#FF444444">
                         <Button x:Name="MinimizeButton" Click="MinimizeButton_Click" FontFamily="Baskerville Old Face" FontSize="25" Content="_" Cursor="Hand" Background="#9BA574" BorderBrush="Black" Height="40" Width="44" Foreground="#FFF9F9F9" FontWeight="Bold"/>

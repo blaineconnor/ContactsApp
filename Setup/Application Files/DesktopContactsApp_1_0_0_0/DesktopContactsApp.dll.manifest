@@ -96,7 +96,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Gp4GxBxYrl6aX27Na05d6tY+XbbvJLlQhh+x/8GpLJc=</dsig:DigestValue>
+      <dsig:DigestValue>ySyOYeStKlBUNQR+v5TfmoeocCkGe4j/vHD8y+otfq0=</dsig:DigestValue>
     </hash>
   </file>
   <file name="DesktopContactsApp.dll.config" size="76">
@@ -114,7 +114,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>F22snSvsktBD687WDk3Ng6f50oc73vb/1/58evXjN8Q=</dsig:DigestValue>
+      <dsig:DigestValue>zA48YP9FPPr6BZH9gt9S0kDTFBurhBOK0FE/Yu9PTUw=</dsig:DigestValue>
     </hash>
   </file>
   <file name="DesktopContactsApp.runtimeconfig.json" size="458">
