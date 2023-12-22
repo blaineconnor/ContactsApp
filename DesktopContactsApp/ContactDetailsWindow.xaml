@@ -5,23 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DesktopContactsApp"
         mc:Ignorable="d"
-        Title="ContactDetailsWindow" Height="300" Width="300">
+        Title="ContactDetailsWindow" Height="290" Width="300" WindowStyle="None" WindowState="Normal" AllowsTransparency="True" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Background="#6E654D" FontFamily="Baskerville Old Face">
     <Grid>
-        <StackPanel Margin="10">
+        <Border MouseLeftButtonDown="Border_MouseLeftButtonDown">
+            <DockPanel Height="40" VerticalAlignment="Top" HorizontalAlignment="Right">
+                <Border BorderBrush="#FF444444">
+                    <Button x:Name="CloseButton" Click="CloseButton_Click" FontFamily="Baskerville Old Face"   FontSize="29" Content="X" Cursor="Hand" Background="#FFD8C59A" BorderBrush="Black" FontWeight="Bold" Foreground="#FFF9F9F9" Height="40"  Width="44"/>
+                </Border>
+            </DockPanel>
+        </Border>
+        <StackPanel VerticalAlignment="Center" Margin="10">
 
-            <TextBox x:Name="nameTextBox"
-                 Margin="0,0,0,5"/>
-            <TextBox x:Name="emailTextBox"
-      Margin="0,0,0,5"/>
-            <TextBox x:Name="phoneTextBox"
-      Margin="0,0,0,5"/>
-            <Button Content="Update"
-                x:Name="UpdateButton"
-                Click="UpdateButton_Click" Background="PowderBlue"/>
-            <Button Content="Delete"
-    x:Name="DeleteButton"
-    Click="DeleteButton_Click" Background="Red"/>
-
+            <TextBox x:Name="nameTextBox" FontFamily="Baskerville Old Face"
+                 Margin="0,0,0,5" FontSize="16" Background="#FFF9F9F9" BorderBrush="#FF33312B"/>
+            <TextBox x:Name="emailTextBox" FontFamily="Baskerville Old Face"
+      Margin="0,0,0,5" FontSize="16" Background="#FFF9F9F9" BorderBrush="#FF33312B"/>
+            <TextBox x:Name="phoneTextBox" FontFamily="Baskerville Old Face"
+      Margin="0,0,0,5" FontSize="16" Background="#FFF9F9F9" BorderBrush="#FF33312B"/>
+            
+        </StackPanel>
+        <StackPanel Margin="10" Width="115" VerticalAlignment="Bottom">
+            <Border>
+                <Button Content="Update" Margin="0 0 0 10"
+            x:Name="UpdateButton"
+            Click="UpdateButton_Click" Background="#FF4E5FAD" FontFamily="Baskerville Old Face" FontSize="16" BorderBrush="#FF33312B" Foreground="#E5F9F9F9"/>
+            </Border>
+            <Border>
+                <Button Content="Delete"
+x:Name="DeleteButton"
+Click="DeleteButton_Click" Background="#FF8E2626" FontFamily="Baskerville Old Face" FontSize="16" BorderBrush="#FF33312B" Foreground="#E5F9F9F9"/>
+            </Border>
         </StackPanel>
     </Grid>
 </Window>

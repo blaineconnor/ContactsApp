@@ -5,18 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DesktopContactsApp"
         mc:Ignorable="d"
-        Title="NewContactWindow" Height="300" Width="300">
+        Title="NewContactWindow" Height="300" Width="300" WindowStyle="None" WindowState="Normal" AllowsTransparency="True" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Background="#6E654D" FontFamily="Baskerville Old Face">
     <Grid>
-        <StackPanel Margin="10">
+        <Border MouseLeftButtonDown="Border_MouseLeftButtonDown">
+            <DockPanel Height="40" VerticalAlignment="Top" HorizontalAlignment="Right">
+                <Border BorderBrush="#FF444444">
+                    <Button x:Name="CloseButton" Click="CloseButton_Click" FontFamily="Baskerville Old Face"   FontSize="29" Content="X" Cursor="Hand" Background="#FFD8C59A" BorderBrush="Black" FontWeight="Bold" Foreground="#FFF9F9F9" Height="40"  Width="44"/>
+                </Border>
+            </DockPanel>
+        </Border>
+        <StackPanel VerticalAlignment="Center" Margin="10">
 
+            <TextBlock FontWeight="Bold" Background="Transparent" Text="Name :" Margin="0,0,0,5" Foreground="#f9f9f9" FontFamily="Baskerville Old Face"
+FontSize="16"/>
             <TextBox x:Name="nameTextBox"
-                     Margin="0,0,0,5"/>
-            <TextBox x:Name="emailTextBox"
+                     Margin="0,0,0,5" FontFamily="Baskerville Old Face"
+                  FontSize="16" Background="#FFF9F9F9" BorderBrush="#FF33312B"/>
+            <TextBlock FontWeight="Bold" Background="Transparent" Text="Email :" Margin="0,0,0,5" Foreground="#f9f9f9" FontFamily="Baskerville Old Face"
+FontSize="16"/>
+            <TextBox x:Name="emailTextBox" FontFamily="Baskerville Old Face"
+                  FontSize="16" Background="#FFF9F9F9" BorderBrush="#FF33312B"
           Margin="0,0,0,5"/>
-            <TextBox x:Name="phoneTextBox"
+            <TextBlock FontWeight="Bold" Background="Transparent" Text="Phone :" Margin="0,0,0,5" Foreground="#f9f9f9" FontFamily="Baskerville Old Face"
+FontSize="16"/>
+            <TextBox x:Name="phoneTextBox" FontFamily="Baskerville Old Face"
+                  FontSize="16" Background="#FFF9F9F9" BorderBrush="#FF33312B"
           Margin="0,0,0,5"/>
-            <Button Content="Save"
-                    x:Name="SaveButton"
+            <Button Width="80" FontSize="18" HorizontalAlignment="Right" Margin="10" Content="Save"
+                    x:Name="SaveButton" Background="#12654D" Foreground="#f9f9f9"
                     Click="SaveButton_Click"/>
 
         </StackPanel>
