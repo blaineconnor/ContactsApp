@@ -4,7 +4,12 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net7.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>contactsAppIcon.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="contactsAppIcon.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="DevExpress.Wpf.Core" Version="23.1.6" />

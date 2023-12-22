@@ -10,7 +10,7 @@
 
         <StackPanel>
             <TextBlock x:Name="nameTxtBlock" FontFamily="Baskerville Old Face" FontSize="20" Foreground="#33312B" Text="Name Lastname" FontWeight="Bold" />
-            <TextBlock x:Name="emailTxtBlock" FontFamily="Baskerville Old Face" FontSize="15" Text="example@domain.com" Foreground="#4E5FAD"/>
+            <TextBlock x:Name="emailTxtBlock" FontFamily="Baskerville Old Face" FontSize="15" Text="example@domain.com" Foreground="#266C4D"/>
             <TextBlock x:Name="phoneTxtBlock" FontFamily="Baskerville Old Face" FontSize="15" Foreground="#33312B" Text="5001112233" FontStyle="Italic"/>
         </StackPanel>
 

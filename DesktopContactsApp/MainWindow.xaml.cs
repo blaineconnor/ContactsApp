@@ -76,11 +76,11 @@ namespace DesktopContactsApp
         private void CloseButton_Click(object sender, RoutedEventArgs e)
         {
             Close();
-        }
+        }        
 
-        private void Border_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        private void brdTopMove(object sender, MouseButtonEventArgs e)
         {
-            if (Mouse.LeftButton == MouseButtonState.Pressed)
+            if(Mouse.LeftButton == MouseButtonState.Pressed)
             {
                 DragMove();
             }

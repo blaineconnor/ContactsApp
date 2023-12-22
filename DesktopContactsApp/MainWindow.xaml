@@ -5,25 +5,34 @@
     xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
     xmlns:local="clr-namespace:DesktopContactsApp"
     xmlns:uc="clr-namespace:DesktopContactsApp.Controls"
-    Title="MainWindow" WindowStyle="None" WindowState="Normal" AllowsTransparency="True" WindowStartupLocation="CenterScreen" Height="390" Width="525" ResizeMode="NoResize" ActiveGlowColor="#FF674330" InactiveGlowColor="#FF37251C" Background="#6E654D" FontFamily="Baskerville Old Face">
+    Title="MainWindow" WindowStyle="None" WindowState="Normal" AllowsTransparency="True" WindowStartupLocation="CenterScreen" Height="460" Width="525" ResizeMode="NoResize" ActiveGlowColor="#FF674330" InactiveGlowColor="#FF37251C" Background="#266C4D" FontFamily="Baskerville Old Face">
     <Grid>
-        <StackPanel Margin="5">
-            <Border MouseLeftButtonDown="Border_MouseLeftButtonDown">
-                <DockPanel Height="40" VerticalAlignment="Top" HorizontalAlignment="Right">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="8*"/>
+        </Grid.RowDefinitions>
+            <Border x:Name="brdTop" Grid.Row="0" MouseLeftButtonDown="brdTopMove" MouseDown="brdTopMove">
+                <DockPanel HorizontalAlignment="Right">
                     <Border  BorderBrush="#FF444444">
-                        <Button x:Name="MinimizeButton" Click="MinimizeButton_Click" FontFamily="Baskerville Old Face" FontSize="25" Content="_" Cursor="Hand" Background="#FFD8C59A" BorderBrush="Black" Height="40" Width="44" Foreground="#FFF9F9F9" FontWeight="Bold"/>
+                        <Button x:Name="MinimizeButton" Click="MinimizeButton_Click" FontFamily="Baskerville Old Face" FontSize="25" Content="_" Cursor="Hand" Background="#9BA574" BorderBrush="Black" Height="40" Width="44" Foreground="#FFF9F9F9" FontWeight="Bold"/>
                     </Border>
                     <Border BorderBrush="#FF444444">
-                        <Button x:Name="CloseButton" Click="CloseButton_Click" FontFamily="Baskerville Old Face"   FontSize="29" Content="X" Cursor="Hand" Background="#FFD8C59A" BorderBrush="Black" FontWeight="Bold" Foreground="#FFF9F9F9" Height="40"  Width="44"/>
+                        <Button x:Name="CloseButton" Click="CloseButton_Click" FontFamily="Baskerville Old Face"   FontSize="29" Content="X" Cursor="Hand" Background="#9BA574" BorderBrush="Black" FontWeight="Bold" Foreground="#FFF9F9F9" Height="40"  Width="44"/>
                     </Border>
                 </DockPanel>
             </Border>
-            <Button Margin="0 5 0 0" Background="#FFD8C59A" Content="New Contact" Click="Button_Click" BorderBrush="#33312B"  FontFamily="Baskerville Old Face" FontSize="20" BorderThickness="2,2,2,2" Foreground="#FF33312B" Cursor="Hand" FontWeight="Bold"/>
+        <StackPanel Grid.Row="1" Margin="5">
 
-            <TextBox Margin="0 5 0 5" Background="#FFD8C59A" TextChanged="TextBox_TextChanged" Foreground="#33312B" FontFamily="Baskerville Old Face" FontWeight="Bold" FontSize="20" BorderThickness="2" BorderBrush="#33312b" Cursor="Hand" />
+                <Button Margin="0 5 0 0" Background="#9BA574" Content="New Contact" Click="Button_Click" BorderBrush="#33312B"  FontFamily="Baskerville Old Face" FontSize="20" BorderThickness="2,2,2,2" Foreground="#FF33312B" Cursor="Hand" FontWeight="Bold"/>
+
+                <TextBox Margin="0 5 0 5" Background="#9BA574" TextChanged="TextBox_TextChanged" Foreground="#33312B" FontFamily="Baskerville Old Face" FontWeight="Bold" FontSize="20" BorderThickness="2" BorderBrush="#33312b" Cursor="Hand" />               
+
+         </StackPanel>
+        <StackPanel Grid.Row="2">
             <ListView Background="#F0E9D9" SelectionChanged="contactsListView_SelectionChanged" x:Name="contactsListView"
-                      Height="280"
-                      Margin="0 5 0 0">
+      Height="325"
+      Margin="0 5 0 0">
                 <ListView.ItemContainerStyle>
                     <Style TargetType="ListViewItem">
                         <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
@@ -35,7 +44,6 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-
         </StackPanel>
     </Grid>
 </dx:ThemedWindow>

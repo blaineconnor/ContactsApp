@@ -15,26 +15,29 @@
             </DockPanel>
         </Border>
         <StackPanel VerticalAlignment="Center" Margin="10">
+            <TextBlock FontWeight="Bold" Background="Transparent" Text="Name :" Margin="0,0,0,5" Foreground="#f9f9f9" FontFamily="Baskerville Old Face"/>
 
             <TextBox x:Name="nameTextBox" FontFamily="Baskerville Old Face"
                  Margin="0,0,0,5" FontSize="16" Background="#FFF9F9F9" BorderBrush="#FF33312B"/>
+            <TextBlock FontWeight="Bold" Background="Transparent" Text="Email :" Margin="0,0,0,5" Foreground="#f9f9f9" FontFamily="Baskerville Old Face"/>
             <TextBox x:Name="emailTextBox" FontFamily="Baskerville Old Face"
       Margin="0,0,0,5" FontSize="16" Background="#FFF9F9F9" BorderBrush="#FF33312B"/>
+            <TextBlock FontWeight="Bold" Background="Transparent" Text="Phone :" Margin="0,0,0,5" Foreground="#f9f9f9" FontFamily="Baskerville Old Face"/>
             <TextBox x:Name="phoneTextBox" FontFamily="Baskerville Old Face"
       Margin="0,0,0,5" FontSize="16" Background="#FFF9F9F9" BorderBrush="#FF33312B"/>
             
         </StackPanel>
-        <StackPanel Margin="10" Width="115" VerticalAlignment="Bottom">
+        <DockPanel Margin="130,0,10,30" VerticalAlignment="Bottom">
             <Border>
-                <Button Content="Update" Margin="0 0 0 10"
+                <Button Content="Update" 
             x:Name="UpdateButton"
             Click="UpdateButton_Click" Background="#FF4E5FAD" FontFamily="Baskerville Old Face" FontSize="16" BorderBrush="#FF33312B" Foreground="#E5F9F9F9"/>
             </Border>
-            <Border>
+            <Border Width="70">
                 <Button Content="Delete"
 x:Name="DeleteButton"
-Click="DeleteButton_Click" Background="#FF8E2626" FontFamily="Baskerville Old Face" FontSize="16" BorderBrush="#FF33312B" Foreground="#E5F9F9F9"/>
+Click="DeleteButton_Click" Background="#FF8E2626" FontFamily="Baskerville Old Face" FontSize="16" BorderBrush="#FF33312B" Foreground="#E5F9F9F9" Width="68"/>
             </Border>
-        </StackPanel>
+        </DockPanel>
     </Grid>
 </Window>
